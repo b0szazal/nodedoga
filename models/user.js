@@ -6,7 +6,7 @@ const users = [
 
 export class UserRepository {
     constructor(name){
-        this.id=users.length+1;
+        this.id=Number(users[users.length-1].id)+1;
         this.name=name;
     }
 

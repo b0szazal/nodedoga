@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+</head>
+<body>
+    <p>Id: <%= user.id %> , name: <%= user.name %></p> 
+    <form action="/api/users/:id" method="post">
+        <button type="submit">user Törlése</button>
+    </form>
+    
+</body>
+</html>
