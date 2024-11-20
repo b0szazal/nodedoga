@@ -9,3 +9,10 @@ export const getAllUsers = async (req, res) => {
 export const getUserById = async (req, res) => {
     
 };
+
+export const addUser = async (req, res) => {
+    let username=req.body.username;
+    console.log(username);
+    UserRepository.addUser(new UserRepository(username) );
+    res.redirect('/api/users');
+}
